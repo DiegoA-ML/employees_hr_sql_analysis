@@ -16,9 +16,9 @@
 \renewcommand{\lstlistingname}{Listado}
 \renewcommand{\figurename}{Figura}
 
-\title{Proyecto de análisis de datos SQL: Optimización de las decisiones de recursos humanos}
+\title{Proyecto de Análisis de Datos SQL: Optimización de las Decisiones de Recursos Humanos}
 \author{Diego Armando Mijares Ledezma A01722421 \and Daniel Eduardo Arana Bodart A01741202 \and Mauricio Octavio Valencia Gonzalez A01234397 \and David Alejandro Acuña Orozco A00571187 \and Diego Gutiérrez Vargas A01285421 \and Alfonso Elizondo Partida A01285151}
-\date{Mayo 23 2026}
+\date{Mayo 24, 2026}
 
 \begin{document}
 
@@ -30,9 +30,9 @@
 \section{Resumen Ejecutivo}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Este análisis tuvo como objetivo comprender la composición, estabilidad, movilidad y compensación de la fuerza laboral de la empresa a partir de la base de datos \texttt{employees}, tomando como fecha de referencia el \textbf{31 de diciembre de 2002} cuando fue necesario. En términos generales, los resultados muestran una organización de gran escala, con \textbf{300024 empleados registrados}, una fuerza laboral madura, con una \textbf{edad promedio de 43.92 años}, y una estructura demográfica en la que no existe un equilibrio total de género, ya que \textbf{59.99\%} de la plantilla corresponde a hombres y \textbf{40.01\%} a mujeres. Estos hallazgos permiten dimensionar la magnitud de la operación y ofrecen una primera visión sobre la composición del talento humano dentro de la empresa.
+Este análisis tuvo como objetivo comprender la composición, estabilidad, movilidad y compensación de la fuerza laboral de la empresa a partir de la base de datos \texttt{employees}, tomando como fecha de referencia el \textbf{31 de diciembre de 2002} cuando fue necesario. En términos generales, los resultados muestran una organización de gran escala, con \textbf{300,024 empleados registrados}, una fuerza laboral madura, con una \textbf{edad promedio de 43.92 años}, y una estructura demográfica en la que no existe un equilibrio total de género, ya que \textbf{59.99\%} de la plantilla corresponde a hombres y \textbf{40.01\%} a mujeres. Estos hallazgos permiten dimensionar la magnitud de la operación y ofrecen una primera visión sobre la composición del talento humano dentro de la empresa.
 
-Asimismo, el análisis evidencia una organización con una dinámica importante de crecimiento interno y estabilidad laboral. Se identificó que \textbf{140270 empleados} han ocupado más de un cargo, lo que sugiere una práctica extendida de movilidad interna, mientras que quienes cambian de puesto permanecen en su primer rol un promedio de \textbf{6.79 años}. A esto se suma una \textbf{antigüedad promedio de 12.92 años} entre los empleados activos, lo que apunta a una fuerza laboral estable y con experiencia acumulada. Por otro lado, las contrataciones muestran una tendencia descendente a lo largo del tiempo después de un periodo inicial de fuerte expansión, sin patrones estacionales especialmente marcados por mes o día de la semana. Finalmente, en materia de compensación, se observó un \textbf{salario promedio de 71964.80} al cierre de 2002, acompañado de una evolución salarial ascendente a lo largo de los años y de diferencias relevantes entre departamentos y puestos. En conjunto, estos resultados ofrecen a Recursos Humanos una base sólida para fortalecer estrategias de planeación de talento, diversidad e inclusión, desarrollo profesional, retención y revisión de estructuras de compensación.
+Asimismo, el análisis evidencia una organización con una dinámica importante de crecimiento interno y estabilidad laboral. Se identificó que \textbf{140,270 empleados} han ocupado más de un cargo, lo que sugiere una práctica extendida de movilidad interna, mientras que quienes cambian de puesto permanecen en su primer rol un promedio de \textbf{6.79 años}. A esto se suma una \textbf{antigüedad promedio de 12.92 años} entre los empleados activos, lo que apunta a una fuerza laboral estable y con experiencia acumulada. Por otro lado, las contrataciones muestran una tendencia descendente a lo largo del tiempo después de un periodo inicial de fuerte expansión, sin patrones estacionales especialmente marcados por mes o día de la semana. Finalmente, en materia de compensación, se observó un \textbf{salario promedio de \$71,964.80} al cierre de 2002, acompañado de una evolución salarial ascendente a lo largo de los años y de diferencias relevantes entre departamentos y puestos. En conjunto, estos resultados ofrecen a Recursos Humanos una base sólida para fortalecer estrategias de planeación de talento, diversidad e inclusión, desarrollo profesional, retención y revisión de estructuras de compensación.
 
 \newpage
 
@@ -54,11 +54,11 @@ FROM employees.employees;
 
 \textbf{Hallazgos:}
 
-La consulta realizada sobre la tabla \texttt{employees} muestra que la empresa cuenta con un total de \textbf{300024 empleados registrados}.
+La consulta realizada sobre la tabla \texttt{employees} muestra que la empresa cuenta con un total de \textbf{300,024 empleados registrados}.
 
 \textbf{Insights:}
 
-El resultado evidencia que la organización opera con una fuerza laboral de gran escala, lo que implica una estructura compleja de gestión del talento humano. Para el área de Recursos Humanos, conocer que existen \textbf{300024 empleados} permite dimensionar con mayor claridad las necesidades de planeación, reclutamiento, administración salarial y distribución de personal. Además, este dato funciona como base para análisis posteriores relacionados con departamentos, puestos, antigüedad y compensaciones, ya que ofrece un panorama general del tamaño de la operación.
+El resultado evidencia que la organización opera con una fuerza laboral de gran escala, lo que implica una estructura compleja de gestión del talento humano. Para el área de Recursos Humanos, conocer que existen \textbf{300,024 empleados} permite dimensionar con mayor claridad las necesidades de planeación, reclutamiento, administración salarial y distribución de personal. Además, este dato funciona como base para análisis posteriores relacionados con departamentos, puestos, antigüedad y compensaciones, ya que ofrece un panorama general del tamaño de la operación.
 
 \begin{figure}[H]
 \centering
@@ -139,7 +139,7 @@ Los empleados que se movieron cambiaron a un máximo de \textbf{2 departamentos}
 
 \textbf{Insights:}
 
-La movilidad interdepartamental es baja. Esto puede indicar que los empleados se especializan en sus áreas o que hay pocas oportunidades de rotación interdepartamental. Desde la perspectiva de RH, impulsar programas de rotación entre áreas podría ampliar las habilidades del talento y fortalecer la colaboración entre departamentos.
+La movilidad interdepartamental es baja. Esto puede indicar que los empleados se especializan en sus áreas o que hay pocas oportunidades de rotación interdepartamental. Desde la perspectiva de Recursos Humanos, impulsar programas de rotación entre áreas podría ampliar las habilidades del talento y fortalecer la colaboración entre departamentos.
 
 \begin{figure}[H]
 \centering
@@ -168,11 +168,11 @@ FROM (
 
 \textbf{Hallazgos:}
 
-La consulta muestra que \textbf{140270 empleados} han ocupado \textbf{más de un cargo o puesto distinto} dentro de la organización, con base en la información histórica registrada en la tabla \texttt{titles}.
+La consulta muestra que \textbf{140,270 empleados} han ocupado \textbf{más de un cargo o puesto distinto} dentro de la organización, con base en la información histórica registrada en la tabla \texttt{titles}.
 
 \textbf{Insights:}
 
-Este resultado sugiere un nivel importante de movilidad interna dentro de la empresa, ya sea a través de promociones, cambios de función o reasignaciones de puesto. Desde una perspectiva de negocio, que \textbf{140270 empleados} hayan desempeñado más de un cargo indica que la organización cuenta con dinámicas activas de desarrollo y movimiento del talento. Para Recursos Humanos, este hallazgo puede interpretarse como una señal positiva sobre las oportunidades de crecimiento interno, aunque también abre la puerta a analizar con mayor detalle si estos cambios responden principalmente a planes de carrera, necesidades operativas o rotación entre funciones.
+Este resultado sugiere un nivel importante de movilidad interna dentro de la empresa, ya sea a través de promociones, cambios de función o reasignaciones de puesto. Desde una perspectiva de negocio, que \textbf{140,270 empleados} hayan desempeñado más de un cargo indica que la organización cuenta con dinámicas activas de desarrollo y movimiento del talento. Para Recursos Humanos, este hallazgo puede interpretarse como una señal positiva sobre las oportunidades de crecimiento interno, aunque también abre la puerta a analizar con mayor detalle si estos cambios responden principalmente a planes de carrera, necesidades operativas o rotación entre funciones.
 
 \begin{figure}[H]
 \centering
@@ -349,7 +349,7 @@ ORDER BY MesContratacion;
 
 \textbf{Hallazgos:}
 
-El mayor volumen de incorporación ocurrió en los primeros años del periodo: \textbf{1986} con \textbf{36150 contrataciones}, \textbf{1985} con \textbf{35316} y \textbf{1987} con \textbf{33501}. A partir de ese punto, las contrataciones presentan una tendencia descendente sostenida hasta llegar a \textbf{1514} en 1999 y únicamente \textbf{13} en 2000. Por mes, \textbf{marzo} es el más activo con \textbf{26917 contrataciones} y \textbf{enero} el más bajo con \textbf{23859}.
+El mayor volumen de incorporación ocurrió en los primeros años del periodo: \textbf{1986} con \textbf{36,150 contrataciones}, \textbf{1985} con \textbf{35,316} y \textbf{1987} con \textbf{33,501}. A partir de ese punto, las contrataciones presentan una tendencia descendente sostenida hasta llegar a \textbf{1514} en \textbf{1999} y únicamente \textbf{13} en \textbf{2000}. Por mes, \textbf{marzo} es el más activo con \textbf{26,917 contrataciones} y \textbf{enero} el más bajo con \textbf{23,859}.
 
 \textbf{Insights:}
 
@@ -400,7 +400,7 @@ ORDER BY DAYOFWEEK(hire_date);
 
 \textbf{Hallazgos:}
 
-El día con mayor número de contrataciones es \textbf{sábado} con \textbf{42918} registros, seguido por \textbf{lunes} con \textbf{42916}. El día con menor número es \textbf{domingo} con \textbf{42527}. Las diferencias entre días son mínimas, todas cercanas a las \textbf{42 mil} incorporaciones.
+El día con mayor número de contrataciones es \textbf{sábado} con \textbf{42,918} registros, seguido por \textbf{lunes} con \textbf{42,916}. El día con menor número es \textbf{domingo} con \textbf{42,527}. Las diferencias entre días son mínimas, todas cercanas a las \textbf{42 mil} incorporaciones.
 
 \textbf{Insights:}
 
@@ -442,7 +442,7 @@ ORDER BY Anio;
 
 \textbf{Hallazgos:}
 
-El \textbf{salario promedio vigente al 31 de diciembre de 2002} es de \textbf{71964.80}. En la evolución histórica, el promedio pasó de \textbf{53419.78} en 1985 hasta \textbf{72622.59} en 2001, reflejando un incremento progresivo en la compensación promedio durante todo el periodo analizado.
+El \textbf{salario promedio vigente al 31 de diciembre de 2002} es de \textbf{\$71,964.80}. En la evolución histórica, el promedio pasó de \textbf{\$53,419.78} en \textbf{1985} hasta \textbf{\$72,622.59} en \textbf{2001}, reflejando un incremento progresivo en la compensación promedio durante todo el periodo analizado.
 
 \textbf{Insights:}
 
@@ -503,7 +503,7 @@ La desviación estándar de los salarios es de \textbf{\$17,332.02}.
 
 \textbf{Insights:}
 
-Comparada con el salario promedio (\$71,964.80), el coeficiente de variación es de aproximadamente \textbf{24\%}, lo que indica una dispersión moderada. Los salarios no están demasiado concentrados alrededor del promedio, lo cual es consistente con una empresa que tiene diversos niveles jerárquicos.
+Comparada con el salario promedio de \textbf{\$71,964.80}, el coeficiente de variación es de aproximadamente \textbf{24\%}, lo que indica una dispersión moderada. Los salarios no están demasiado concentrados alrededor del promedio, lo cual es consistente con una empresa que tiene diversos niveles jerárquicos.
 
 \begin{figure}[H]
 \centering
@@ -532,7 +532,7 @@ El salario más frecuente es \textbf{\$71,669}, con \textbf{9 empleados} percibi
 
 \textbf{Insights:}
 
-Este valor es muy cercano al promedio general (\$71,964.80), lo que sugiere que existe una banda salarial central donde se concentra buena parte de los empleados de nivel medio.
+Este valor es muy cercano al promedio general de \textbf{\$71,964.80}, lo que sugiere que existe una banda salarial central donde se concentra buena parte de los empleados de nivel medio.
 
 \begin{figure}[H]
 \centering
@@ -589,7 +589,7 @@ Los cinco salarios más altos de la empresa oscilan entre \textbf{\$150,345} y \
 
 \textbf{Insights:}
 
-Los top earners están concentrados en un rango de \$150K--\$158K. Identificar a estos empleados permite a RH diseñar planes de retención personalizados y planes de sucesión.
+Los top earners están concentrados en un rango de \$150K--\$158K. Identificar a estos empleados permite a Recursos Humanos diseñar planes de retención personalizados y planes de sucesión.
 
 \begin{figure}[H]
 \centering
@@ -615,7 +615,7 @@ WHERE to_date = '9999-01-01'
 
 \textbf{Insights:}
 
-Este segmento representa la base salarial más vulnerable. RH debería revisar si estos salarios son competitivos respecto al mercado para reducir el riesgo de rotación en posiciones de entrada.
+Este segmento representa la base salarial más vulnerable. Recursos Humanos debería revisar si estos salarios son competitivos respecto al mercado para reducir el riesgo de rotación en posiciones de entrada.
 
 \begin{figure}[H]
 \centering
@@ -639,7 +639,7 @@ WHERE to_date = '9999-01-01';
 
 \textbf{Hallazgos:}
 
-La nómina total asciende a \textbf{\$5,874,846,442 USD anuales} (~\$5.87 mil millones).
+La nómina total asciende a \textbf{\$5,874,846,442 USD anuales} ($\sim$\$5.87 mil millones).
 
 \textbf{Insights:}
 
@@ -665,7 +665,7 @@ WHERE to_date = '9999-01-01'
 
 \textbf{Hallazgos:}
 
-La nómina de empleados con salario superior a \$90,000 asciende a \textbf{\$1,294,918,949 USD anuales} (~\$1.29 mil millones).
+La nómina de empleados con salario superior a \$90,000 asciende a \textbf{\$1,294,918,949 USD anuales} ($\sim$\$1.29 mil millones).
 
 \textbf{Insights:}
 
@@ -693,11 +693,11 @@ ORDER BY anio DESC;
 
 \textbf{Hallazgos:}
 
-El gasto anual en salarios superiores a \$80,000 ha mostrado un crecimiento constante a lo largo de los años, iniciando en \textbf{\$34,043,565 USD} en 1985 y alcanzando un pico histórico de \textbf{\$2,107,422,272 USD} (~\$2.11 mil millones) en el año 2001. Para el año 2002, el registro cierra en \textbf{\$1,351,008,401 USD} debido al corte de registros en el historial de la base de datos.
+El gasto anual en salarios superiores a \$80,000 ha mostrado un crecimiento constante a lo largo de los años, iniciando en \textbf{\$34,043,565 USD} en \textbf{1985} y alcanzando un pico histórico de \textbf{\$2,107,422,272 USD} ($\sim$\$2.11 mil millones) en el año \textbf{2001}. Para el año \textbf{2002}, el registro cierra en \textbf{\$1,351,008,401 USD}($\sim$\$1.35 mil millones) debido al corte de registros en el historial de la base de datos.
 
 \textbf{Insights:}
 
-La evolución de los datos refleja una expansión masiva y acelerada en la nómina de alta compensación, multiplicándose el gasto por más de 60 veces entre 1985 y 2001. Este incremento exponencial en los años noventa señala que los salarios altos pasaron a concentrar una parte crítica del costo operativo, lo que obliga a las áreas de RH y Finanzas a monitorear la tasa de retención de perfiles senior y planear estrategias de compensación sostenibles a largo plazo.
+La evolución de los datos refleja una expansión masiva y acelerada en la nómina de alta compensación, multiplicándose el gasto por más de 60 veces entre 1985 y 2001. Este incremento exponencial en los años noventa señala que los salarios altos pasaron a concentrar una parte crítica del costo operativo, lo que obliga a las áreas de Recursos Humanos y Finanzas a monitorear la tasa de retención de perfiles senior y planear estrategias de compensación sostenibles a largo plazo.
 
 \begin{figure}[H]
 \centering
@@ -729,7 +729,7 @@ El salario promedio masculino es de \textbf{\$71,990.47} (48,927 empleados) y el
 
 \textbf{Insights:}
 
-La brecha salarial es prácticamente inexistente, lo cual es un hallazgo muy positivo. Sin embargo, se observa un desbalance en la representación: los hombres representan ~60\% de la plantilla vs. 40\% mujeres. RH podría enfocarse en iniciativas de diversidad e inclusión para balancear la fuerza laboral.
+La brecha salarial es prácticamente inexistente, lo cual es un hallazgo muy positivo. Sin embargo, se observa un desbalance en la representación: los hombres representan $\sim$60\% de la plantilla vs. 40\% mujeres. Recursos Humanos podría enfocarse en iniciativas de diversidad e inclusión para balancear la fuerza laboral.
 
 \begin{figure}[H]
 \centering
@@ -776,9 +776,9 @@ ORDER BY SalarioPromedio DESC;
 
 \textbf{Hallazgos:}
 
-En el análisis por departamento, \textbf{Sales} presenta el \textbf{salario promedio más alto}, con \textbf{89005.79}, seguido por \textbf{Marketing} con \textbf{79879.18} y \textbf{Finance} con \textbf{78075.46}. En contraste, los departamentos con los promedios salariales más bajos son \textbf{Human Resources}, con \textbf{63643.26}, y \textbf{Quality Management}, con \textbf{65516.97}.
+En el análisis por departamento, \textbf{Sales} presenta el \textbf{salario promedio más alto}, con \textbf{\$89,005.79}, seguido por \textbf{Marketing} con \textbf{\$79,879.18} y \textbf{Finance} con \textbf{\$78,075.46}. En contraste, los departamentos con los promedios salariales más bajos son \textbf{Human Resources}, con \textbf{\$63,643.26}, y \textbf{Quality Management}, con \textbf{\$65,516.97}.
 
-Por otra parte, en el análisis por puesto, el promedio salarial más alto corresponde a \textbf{Senior Staff}, con \textbf{80584.05}, seguido por \textbf{Manager}, con \textbf{77723.67}, y \textbf{Senior Engineer}, con \textbf{70845.33}. En los niveles más bajos aparecen \textbf{Engineer}, con \textbf{59590.07}, y \textbf{Assistant Engineer}, con \textbf{57504.68}. Cabe señalar que el puesto de \textbf{Manager} cuenta con únicamente \textbf{9 empleados}, por lo que su promedio debe interpretarse con cierta cautela.
+Por otra parte, en el análisis por puesto, el promedio salarial más alto corresponde a \textbf{Senior Staff}, con \textbf{\$80,584.05}, seguido por \textbf{Manager}, con \textbf{\$77,723.67}, y \textbf{Senior Engineer}, con \textbf{\$70,845.33}. En los niveles más bajos aparecen \textbf{Engineer}, con \textbf{\$59,590.07}, y \textbf{Assistant Engineer}, con \textbf{\$57,504.68}. Cabe señalar que el puesto de \textbf{Manager} cuenta con únicamente \textbf{9 empleados}, por lo que su promedio debe interpretarse con cierta cautela.
 
 \textbf{Insights:}
 
@@ -805,7 +805,7 @@ Los costos salariales no se distribuyen de manera homogénea. A nivel departamen
 \subsection{Distribución de la Fuerza Laboral por Departamento}
 
 \subsubsection{¿Cómo se distribuye la fuerza laboral entre departamentos y cuál es el más grande?}
-\textbf{Necesidad de Negocio:} Entender cómo están distribuidos los recursos humanos para apoyar decisiones de presupuesto y contratación por área.
+\textbf{Necesidad de Negocio:} Entender cómo están distribuidos los Recursos Humanos para apoyar decisiones de presupuesto y contratación por área.
 
 \textbf{SQL QUERY:}
 \begin{lstlisting}[language=SQL, caption={Consulta -- Distribución de Empleados por Departamento}]
@@ -826,7 +826,7 @@ Los resultados muestran que \textbf{Development} es el departamento más grande 
 
 \textbf{Insights:}
 
-La distribución refleja una empresa claramente orientada hacia tecnología y producción. El hecho de que dos departamentos concentren más de la mitad de la plantilla tiene implicaciones importantes para la asignación de presupuesto, la planificación de contrataciones y la priorización de programas de RH. Los departamentos más pequeños, como Finance y Human Resources, aunque críticos para la operación, representan una inversión de headcount comparativamente menor.
+La distribución refleja una empresa claramente orientada hacia tecnología y producción. El hecho de que dos departamentos concentren más de la mitad de la plantilla tiene implicaciones importantes para la asignación de presupuesto, la planificación de contrataciones y la priorización de programas de Recursos Humanos. Los departamentos más pequeños, como Finance y Human Resources, aunque críticos para la operación, representan una inversión de headcount comparativamente menor.
 
 \begin{figure}[H]
 \centering
@@ -917,7 +917,7 @@ ORDER BY ContratacionesUltimos5Anos DESC;
 
 \textbf{Hallazgos:}
 
-En el período 1998--2002, \textbf{Development} lideró las contrataciones con \textbf{1,588 nuevos empleados}, seguido por \textbf{Production} con \textbf{1,363} y \textbf{Sales} con \textbf{973}. Los departamentos con menor actividad de contratación reciente fueron \textbf{Finance} con \textbf{331} y \textbf{Human Resources} con \textbf{340}.
+En el período de \textbf{1998--2002}, \textbf{Development} lideró las contrataciones con \textbf{1,588 nuevos empleados}, seguido por \textbf{Production} con \textbf{1,363} y \textbf{Sales} con \textbf{973}. Los departamentos con menor actividad de contratación reciente fueron \textbf{Finance} con \textbf{331} y \textbf{Human Resources} con \textbf{340}.
 
 \textbf{Insights:}
 
@@ -975,30 +975,30 @@ Este análisis permitió comprender de manera integral la composición, estabili
 
 \subsubsection*{Hallazgos Clave}
 \begin{itemize}
-    \item \textbf{Tendencias de la fuerza laboral:} La empresa cuenta con \textbf{300024 empleados registrados}, una \textbf{edad promedio de 43.92 años} y una composición de género donde predominan los hombres (\textbf{59.99\%} frente a \textbf{40.01\%} de mujeres). Esto refleja una fuerza laboral amplia, madura y con oportunidades de mejora en equilibrio de género.
+    \item \textbf{Tendencias de la fuerza laboral:} La empresa cuenta con \textbf{300,024 empleados registrados}, una \textbf{edad promedio de 43.92 años} y una \textbf{composición de género} que muestra un \textbf{59.99\% de hombres} frente a un \textbf{40.01\% de mujeres}. Esto refleja una fuerza laboral amplia, madura y con oportunidades de mejora en equilibrio de género.
 
-    \item \textbf{Movilidad y crecimiento:} Se identificó que \textbf{140270 empleados} han ocupado más de un cargo, lo que evidencia una práctica importante de movilidad interna. Los empleados que cambian de puesto permanecen en su primer rol un promedio de \textbf{6.79 años}, lo que sugiere trayectorias de crecimiento de mediano a largo plazo.
+    \item \textbf{Movilidad y crecimiento:} Se identificó que \textbf{140,270 empleados} han ocupado más de un cargo, lo que evidencia una práctica importante de movilidad interna. Los empleados que cambian de puesto permanecen en su primer rol un promedio de \textbf{6.79 años}, lo que sugiere trayectorias de crecimiento de mediano a largo plazo.
 
     \item \textbf{Retención y estabilidad:} La \textbf{antigüedad promedio} de los empleados activos es de \textbf{12.92 años}, lo que indica una organización con alta estabilidad laboral. A nivel departamental, la retención es muy uniforme, con diferencias de apenas \textbf{0.03 años} entre el departamento más y menos longevo.
 
     \item \textbf{Patrones de contratación:} Las contrataciones fueron mucho más altas en los primeros años del periodo y después mostraron una tendencia descendente sostenida. No se observan patrones estacionales fuertes por mes ni por día de la semana.
 
-    \item \textbf{Compensación:} El salario promedio es de \textbf{\$71,964.80}, con una brecha salarial por género mínima (\textbf{0.09\%}). \textbf{Sales} lidera en salario promedio departamental (\$89,005.79) mientras que \textbf{Human Resources} presenta el más bajo (\$63,643.26).
+    \item \textbf{Compensación:} El salario promedio es de \textbf{\$71,964.80}, con una brecha salarial por género mínima de  \textbf{0.09\%}. \textbf{Sales} lidera en salario promedio departamental con \textbf{\$89,005.79} mientras que \textbf{Human Resources} presenta el más bajo con \textbf{\$63,643.26}.
 
-    \item \textbf{Desempeño departamental:} \textbf{Development} y \textbf{Production} concentran más del 50\% de la fuerza laboral y lideran las contrataciones recientes, confirmando su rol central en la estrategia de la empresa. \textbf{Customer Service}, \textbf{Quality Management} y \textbf{Production} muestran mayor rotación de liderazgo con \textbf{4 cambios de gerente}, mientras que los departamentos restantes registran solo \textbf{2 cambios}. Los gerentes más recientes se encuentran precisamente en esas áreas de mayor rotación.
+    \item \textbf{Desempeño departamental:} \textbf{Development} y \textbf{Production} concentran más del \textbf{50\% de la fuerza laboral} y lideran las contrataciones recientes, confirmando su rol central en la estrategia de la empresa. \textbf{Customer Service}, \textbf{Quality Management} y \textbf{Production} muestran mayor rotación de liderazgo con \textbf{4 cambios de gerente}, mientras que los departamentos restantes registran solo \textbf{2 cambios}. Los gerentes más recientes se encuentran precisamente en esas áreas de mayor rotación.
 \end{itemize}
 
-\subsubsection*{Recomendaciones para HR}
+\subsubsection*{Recomendaciones para Recursos Humanos}
 \begin{itemize}
-    \item \textbf{Fortalecer estrategias de diversidad e inclusión.} Dado que la participación masculina es considerablemente mayor que la femenina, sería conveniente impulsar metas y prácticas de reclutamiento que favorezcan una representación más balanceada entre géneros, especialmente en áreas donde pueda existir una mayor concentración histórica.
+    \item \textbf{Fortalecer estrategias de diversidad e inclusión:} Dado que la participación masculina es considerablemente mayor que la femenina, sería conveniente impulsar metas y prácticas de reclutamiento que favorezcan una representación más balanceada entre géneros, especialmente en áreas donde pueda existir una mayor concentración histórica.
 
-    \item \textbf{Diseñar rutas de desarrollo más claras y ágiles.} La movilidad interna es alta, pero el tiempo promedio en el primer rol es de \textbf{6.79 años}. Recursos Humanos podría evaluar programas de desarrollo, capacitación y sucesión que permitan acelerar el crecimiento del talento en puestos o áreas estratégicas sin perder la solidez de la experiencia acumulada.
+    \item \textbf{Diseñar rutas de desarrollo más claras y ágiles:} La movilidad interna es alta, pero el tiempo promedio en el primer rol es de \textbf{6.79 años}. Recursos Humanos podría evaluar programas de desarrollo, capacitación y sucesión que permitan acelerar el crecimiento del talento en puestos o áreas estratégicas sin perder la solidez de la experiencia acumulada.
 
-    \item \textbf{Monitorear con mayor precisión la retención y la estructura de compensación.} Aunque la antigüedad promedio sugiere estabilidad, sería recomendable complementar el análisis con indicadores directos de rotación, bajas y permanencia. De igual forma, conviene revisar periódicamente la estructura salarial para asegurar que las diferencias entre departamentos y puestos sigan siendo coherentes con las responsabilidades, la competitividad del mercado y la equidad interna.
+    \item \textbf{Monitorear con mayor precisión la retención y la estructura de compensación:} Aunque la antigüedad promedio sugiere estabilidad, sería recomendable complementar el análisis con indicadores directos de rotación, bajas y permanencia. De igual forma, conviene revisar periódicamente la estructura salarial para asegurar que las diferencias entre departamentos y puestos sigan siendo coherentes con las responsabilidades, la competitividad del mercado y la equidad interna.
 
-    \item \textbf{Atender la estabilidad del liderazgo en departamentos de alta rotación gerencial.} \textbf{Customer Service}, \textbf{Quality Management} y \textbf{Production} han tenido el doble de cambios de gerente que el resto de los departamentos. RH debería investigar las causas de esta rotación e implementar programas de desarrollo de liderazgo y planes de sucesión específicos para estas áreas, a fin de garantizar continuidad estratégica y estabilidad cultural.
+    \item \textbf{Atender la estabilidad del liderazgo en departamentos de alta rotación gerencial:} \textbf{Customer Service}, \textbf{Quality Management} y \textbf{Production} han tenido el doble de cambios de gerente en comparación con el resto de los departamentos. Recursos Humanos debería investigar las causas de esta rotación e implementar programas de desarrollo de liderazgo y planes de sucesión específicos para estas áreas, a fin de garantizar continuidad estratégica y estabilidad cultural.
 
-    \item \textbf{Revisar la inversión en headcount de departamentos estratégicos de soporte.} \textbf{Finance} y \textbf{Human Resources} registran las menores contrataciones recientes pese a ser áreas críticas para la operación. Si la empresa aspira a mayor agilidad organizacional y soporte robusto al crecimiento, podría considerar reforzar estas áreas de manera selectiva.
+    \item \textbf{Revisar la inversión en headcount de departamentos estratégicos de soporte:} \textbf{Finance} y \textbf{Human Resources} registran las menores contrataciones recientes pese a ser áreas críticas para la operación. Si la empresa aspira a mayor agilidad organizacional y soporte robusto al crecimiento, se podría considerar reforzar estas áreas de manera selectiva.
 \end{itemize}
 
 \newpage
